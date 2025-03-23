@@ -22,6 +22,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative; 
 }
 .search input{
     border: 0;
@@ -90,4 +91,31 @@ body{
     margin-left: 10px;
     font-size: 14px;
     margin-top: 10px;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%; /* Always place it right below the input field */
+    left: 0;
+    width: 100%; /* Match the width of the search box */
+    background: #ebfffc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    /*padding: 5px 0;*/
+}
+.suggestion-item {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: rgb(139, 33, 197);
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    margin: 2px 5px;
+}
+.suggestion-item:hover {
+    background: rgb(52, 52, 110);
+    color: white;
 }
