@@ -1,5 +1,5 @@
-const apikey ="40a5a3f8fb045509d839a2b6ac5e9b38";
-const apiurl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apikey ="YOUR API KEY";
+const apiurl ="YOUR APIURL";
 
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
@@ -44,7 +44,7 @@ async function checkWeather(city){
     }
 }
 async function fetchCitySuggestions(query) {
-    const url = `https://nominatim.openstreetmap.org/search?city=${query}&format=json&addressdetails=1&limit=5`;
+    const url = `URL`;
 
     try {
         const response = await fetch(url);
