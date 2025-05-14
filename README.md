@@ -16,7 +16,7 @@
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Authentication**:  Firebase Auth *(depending on what you used)*
+- **Authentication**:  Firebase Auth
 - **API**: OpenWeatherMap API 
 
 
